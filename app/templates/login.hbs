@@ -1,0 +1,19 @@
+<h2 id='title'>Super-Secure Secret Login Screen of Secrecy and Security</h2>
+
+{{#if response.success}}
+  <div class="alert alert-success" role="alert">
+    You're logged in Securely!
+  </div>
+{{/if}}
+
+{{#if response.failure}}
+  <div class="alert alert-info" role="alert">
+    Sorry we're too secure to log you in with those credentials.
+  </div>
+{{/if}}
+
+<form class="form-signin" role="form">
+  {{input value=username class="form-control test-username" placeholder="Username"}}
+  {{input type="password" value=password class="form-control test-password" placeholder="Password"}}
+  <button class="btn btn-lg btn-primary btn-block" {{action "signIn"}} {{bind-attr disabled=disabled}}>Sign in</button>
+</form>
