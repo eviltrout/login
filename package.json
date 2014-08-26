@@ -27,6 +27,7 @@
     "ember-cli-qunit": "0.0.5",
     "express": "^4.8.5",
     "glob": "^4.0.5",
-    "ember-cli-bootstrap": "0.0.7"
+    "ember-cli-bootstrap": "0.0.7",
+    "ember-cli-pretender": "~0.2.1"
   }
 }
