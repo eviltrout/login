@@ -18,5 +18,7 @@ test("It can login successfully", function() {
   fillIn(".test-password", "secret");
   click(".form-signin button");
 
-  equal(find('.alert-success').length, 1, "it shows the success messsage");
+  andThen(function() {
+    equal(find('.alert-success').length, 1, "it shows the success messsage");
+  });
 });
